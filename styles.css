@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    flex-direction: column; /* Stacks the content vertically */
+}
+
+header .logo {
+    text-align: center; /* Ensures the title and the date/time are centered */
+}
+
+header nav {
+    margin-top: 10px; /* Adds space between the logo and the navigation */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#current-time {
+    font-size: 1rem;
+    color: white;
+    margin-top: 5px; /* Space between the title and the date/time */
+}
+
+
+section {
+    padding: 30px;
+}
+
+h2 {
+    color: #333;
+}
+h1 {
+    text-align: center;
+}
+#album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Maximum width for the slider */
+    height:900px; /* Set fixed height for the slider */
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; /* Ensure the slider takes up the full width */
+}
+
+.slider img {
+    width: 100%; /* Image takes full width of the container */
+    height: 100%; /* Image scales to full height of the container */
+    object-fit: contain; /* Ensure the image is contained within the bounds */
+    border-radius: 8px;
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+/* Ensure only one image is visible at a time */
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.slider img {
+    width: 100%;  /* Adjust width to fit container */
+    height: 100%; /* Adjust height to fit container */
+    object-fit: contain;
+    flex-shrink: 0; /* Prevent image shrinking */
+}
+
+
+
+
+
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Button Styles */
+.join-us-button {
+    background-color: #9b0e0e; /* Dark background color */
+    color: white; /* White text */
+    font-size: 1.2rem; /* Slightly larger font */
+    padding: 15px 30px; /* Add padding for a comfortable size */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #1e1e2d; /* Border color to match the background */
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Treat as an inline element but allow padding */
+    transition: background-color 0.3s, border 0.3s; /* Smooth transition for hover effects */
+}
+
+.join-us-button:hover {
+    background-color: #d4000b; /* Change background on hover */
+    border-color: #00bcd4; /* Border color matches background */
+    color: white; /* Keep the text white */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.join-us-button:active {
+    background-color: #0097a7; /* Darken the background when clicked */
+    border-color: #06a700; /* Darker border color */
+    color: white; 
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+footer .contact-info {
+    margin-top: 10px;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+footer .contact-info a {
+    color: #00bcd4; /* Link color */
+    text-decoration: none;
+}
+
+footer .contact-info a:hover {
+    text-decoration: underline;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 200px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+audio {
+    width: 100%; /* Full width inside the container */
+    outline: none; /* Remove default outline */
+    border-radius: 8px;
+}
+
+.audio-container:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: #444;
+}
